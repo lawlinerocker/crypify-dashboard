@@ -111,13 +111,13 @@ go run main.go
 
 ## Image Screenshots
 
-![alt text](image.png)
+![alt text](/doc/image.png)
 
-![alt text](image-7.png)
+![alt text](/doc/image-7.png)
 
-![alt text](image-6.png)
+![alt text](/doc/image-6.png)
 
-![alt text](image-3.png)
+![alt text](/doc/image-3.png)
 ## 🖼 Meta, Logo, and SEO
 
 - Used `Logo.tsx` as app logo and favicon across pages
