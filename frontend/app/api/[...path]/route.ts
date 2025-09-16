@@ -35,13 +35,14 @@ async function proxy(req: NextRequest, params: { path?: string[] }) {
     cache: "no-store",
   });
 
-  const outHeaders = new Headers();
-  resp.headers.forEach((v, k) => outHeaders.set(k, v));
+  const data = await resp.json();
 
-  const arrayBuffer = await resp.arrayBuffer();
-  return new NextResponse(arrayBuffer, {
+  const safeHeaders = new Headers();
+  safeHeaders.set("Content-Type", "application/json");
+
+  return new NextResponse(JSON.stringify(data), {
     status: resp.status,
-    headers: outHeaders,
+    headers: safeHeaders,
   });
 }
 
