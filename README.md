@@ -19,7 +19,7 @@ Crypify is a full-stack cryptocurrency dashboard project built with **Go** (Gin)
 ---
 
 ## 🚀 DEMO
-Demo at : -
+Demo at : https://crypify-dashboard-frontend.onrender.com/markets
 
 ## Image Screenshots
 
