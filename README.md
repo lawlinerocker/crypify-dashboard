@@ -18,6 +18,19 @@ Crypify is a full-stack cryptocurrency dashboard project built with **Go** (Gin)
 
 ---
 
+## 🚀 DEMO
+Demo at : -
+
+## Image Screenshots
+
+![alt text](/doc/image.png)
+
+![alt text](/doc/image-7.png)
+
+![alt text](/doc/image-6.png)
+
+![alt text](/doc/image-3.png)
+
 ## 📁 Project Structure
 
 ### 🔧 Backend (Go)
@@ -31,6 +44,11 @@ Located in: `./backend/` or `./providers/` package
 - `HistoryRange(symbol, from, to)` – precise range data
 - `AllHistory(rangeQ)` – fetch history for all coins
 - `AllCoins()` – fetch top coins with sparkline + change %
+
+### COINSGECOKO API DOC
+- **Coins Gecko Documentation & API TOKEN from: https://docs.coingecko.com/**
+
+
 
 **Environment Variables Samples**
 ```
@@ -50,7 +68,7 @@ Frontend
 
 ----------------------------------------------------
 
-NEXT_PUBLIC_BACKEND_URL=xxxxx
+BACKEND_URL=xxxxx
 API_KEY=xxxxx
 
 ----------------------------------------------------
@@ -109,20 +127,24 @@ go run main.go
 ---
 
 
-## Image Screenshots
 
-![alt text](/doc/image.png)
-
-![alt text](/doc/image-7.png)
-
-![alt text](/doc/image-6.png)
-
-![alt text](/doc/image-3.png)
 ## 🖼 Meta, Logo, and SEO
 
 - Used `Logo.tsx` as app logo and favicon across pages
 - Each route uses per-page `metadata` inside `layout.tsx` (due to `"use client"` restrictions)
 - Splash page (`app/page.tsx`) has custom dark/light background class
+
+---
+
+## 🐳 Run with Docker
+
+```bash
+docker-compose up --build
+```
+
+- Backend → `http://localhost:8080`
+- Frontend → `http://localhost:3000`
+
 
 ---
 
